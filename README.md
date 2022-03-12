@@ -1,2 +1,3 @@
-# dotnet_template
-CQRS based dotnet core template
+## Dotnet Template
+
+#### CQRS based dotnet core template for dotnet 6.0

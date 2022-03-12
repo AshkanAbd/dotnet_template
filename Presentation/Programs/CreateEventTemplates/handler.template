@@ -1,0 +1,16 @@
+using Application.Common;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace #Namespace#;
+
+public class #Event#EventHandler : AbstractEventHandler<#Event#Event>
+{
+    public #Event#EventHandler(IServiceScopeFactory serviceScopeFactory) : base(serviceScopeFactory)
+    {
+    }
+
+    public override async Task HandleEvent(#Event#Event @event, CancellationToken _)
+    {
+        
+    }
+}

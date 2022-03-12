@@ -1,0 +1,8 @@
+using MediatR;
+
+namespace #Namespace#;
+
+public class #Event#Event : INotification
+{
+    
+}

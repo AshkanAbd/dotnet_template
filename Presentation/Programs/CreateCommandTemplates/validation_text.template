@@ -1,0 +1,5 @@
+var validationResult = await new [commandName]CommandValidator(DbContext).StdValidateAsync(request, _);
+        if (validationResult.Failed()) {
+            return BadRequest<[paginationStart][commandDtoName][paginationEnd]>(validationResult.Messages());
+        }
+        

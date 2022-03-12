@@ -1,0 +1,8 @@
+[stdResponseImport][paginationImport]
+using MediatR;
+
+namespace Application.[queryNamespace].[queryName];
+
+public class [queryName]Query : IRequest<[stdResponseStart][paginationStart][queryDtoName][paginationEnd][stdResponseEnd]>
+{
+}

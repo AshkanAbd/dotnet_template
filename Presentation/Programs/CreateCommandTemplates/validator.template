@@ -1,0 +1,11 @@
+using Application.Common.Validation;
+using Infrastructure;
+
+namespace Application.[commandNamespace].[commandName];
+
+public class [commandName]CommandValidator : Validator<[commandName]Command, AppDbContext>
+{
+    public [commandName]CommandValidator(AppDbContext context = null) : base(context)
+    {
+    }
+}

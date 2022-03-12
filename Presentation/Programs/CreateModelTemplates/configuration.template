@@ -1,0 +1,14 @@
+using Domain.Common;
+using Domain.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace #Namespace#.Configurations;
+
+public class #ModelName#Configuration : AbstractModelConfiguration<#ModelName#>
+{
+    public override void Configure(EntityTypeBuilder<#ModelName#> builder)
+    {
+        base.Configure(builder);
+    }
+}

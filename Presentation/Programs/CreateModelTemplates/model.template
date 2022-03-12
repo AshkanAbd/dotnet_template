@@ -1,0 +1,30 @@
+using Domain.Common;
+using Domain.Configurations;
+using Microsoft.EntityFrameworkCore;
+using DbContext = SoftDeletes.Core.DbContext;
+
+namespace #Namespace#.Models;
+
+[EntityTypeConfiguration(typeof(#ModelName#Configuration))]
+public class #ModelName# : ModelExtension
+{
+    
+
+    public override Task OnSoftDeleteAsync(DbContext context, CancellationToken cancellationToken = default)
+    {
+        return Task.CompletedTask;
+    }
+
+    public override void OnSoftDelete(DbContext context)
+    {
+    }
+
+    public override Task LoadRelationsAsync(DbContext context, CancellationToken cancellationToken = default)
+    {
+        return Task.CompletedTask;
+    }
+
+    public override void LoadRelations(DbContext context)
+    {
+    }
+}

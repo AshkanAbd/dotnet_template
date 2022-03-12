@@ -1,0 +1,20 @@
+using Application.Common;[stdResponseImport][validationImport][paginationImport]
+using Microsoft.AspNetCore.Http;
+using Infrastructure;
+using Infrastructure.Authorization;
+
+namespace Application.[commandNamespace].[commandName];
+
+public class [commandName]CommandHandler : AbstractRequestHandler<[commandName]Command, [stdResponseStart][paginationStart][commandDtoName][paginationEnd][stdResponseEnd]>
+{
+    public [commandName]CommandHandler(IAuthorizationService authorizationService, AppDbContext dbContext, 
+        IHttpContextAccessor httpContextAccessor) : base(authorizationService, dbContext, httpContextAccessor)
+    {
+    }
+
+    public override async Task<[stdResponseStart][paginationStart][commandDtoName][paginationEnd][stdResponseEnd]> Handle([commandName]Command request, CancellationToken _)
+    {
+        [validation]
+        return null;
+    }
+}
